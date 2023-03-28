@@ -223,6 +223,16 @@
     width: 100%;
     height: 50%;
     text-align: center; }
+  .card div.card-heading {
+    text-align: center;
+    color: black;
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+  .card div.card_para {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white; }
   .card__side {
     background-color: orangered;
     height: 25rem;
@@ -236,7 +246,7 @@
     border-radius: 5px;
     box-shadow: 0 1.5 4rem rgba(0, 0, 0, 0.5); }
     .card__side--front {
-      background-color: orangered; }
+      background-color: #12d399; }
     .card__side--back {
       background-color: #ffb900;
       transform: rotateY(180deg); }
