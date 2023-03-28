@@ -1,0 +1,78 @@
+.section-about{
+    background-color: white;
+   height: 95vh;
+   margin-top: -20vh;
+   padding:25rem 0;
+   margin-bottom: 2%;
+  
+}
+.about-box{
+   // position: relative;
+   
+//left:30px;
+//text-align: center;
+
+}
+    .heading-secondary{
+   // position: absolute;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    color:crimson;
+    
+    margin-top: -25vh;
+    //height:25vh;
+    //width:100vh;
+
+    //text-align: center;
+    //left:50%;
+    //right:50%;
+    //transform: translate(-50%,-50%);
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all .2s;
+    animation-timing-function: ease-in-out;
+    &:hover{
+        transform: skewY(3deg) skewX(2deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba(black,2);
+    }
+   
+}
+
+.heading-terniary{
+    text-transform: uppercase;
+    color:crimson;
+    //font-weight: 450;
+    //font-size: 1.5rem;
+    font-size: 1rem;
+    font-family:Comic Sans MS;
+}
+.heading-terniary .para{
+    
+    &:not(:last-child)
+    {
+        margin-bottom: 5rem;
+    }
+
+}
+.section-features{
+    padding:20rem 2rem;
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,rgba(78, 95, 75, 0.7),rgba(58, 70, 62, 0.701)),url(https://theburgnews.com/wp-content/uploads/2021/04/IMG_8160-scaled.jpeg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0% 0%, 100% 10%, 100% 100% , 0% 100%);
+    position: relative;
+    h2{
+color:white;
+font-weight: 500;
+font-size: 2rem;
+margin-top:-8rem;
+margin-bottom: 5rem;
+text-transform: uppercase;
+font-family: monospace;
+    }
+}
+.section-deals{
+    padding:25rem 0 50rem 0;
+}

@@ -1,0 +1,33 @@
+.feature-box{
+    background-color: rgba(white, .8);
+    font-size:1rem;
+    padding:0.1rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(green,0.15);
+    margin-bottom: 12%;
+    transition: transform .3s; //time of animation
+
+    h3{
+color:black;
+font-family: 'Times New Roman', Times, serif;
+text-transform: uppercase;
+
+    }
+    h4{
+        font-family: 'Times New Roman', Times, serif;
+        color:coral
+    }
+    &:hover{
+        transform: scale(1.1) translateY(-3rem) //scale:to increase size //translate: to shift upwards
+       
+    }
+    &__icon{
+        font-size: 6rem;
+        margin-bottom: .5rem;
+    }
+    .shoes_pic{
+        height:50%;
+        width:50%;
+    }
+}
