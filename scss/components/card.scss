@@ -22,6 +22,10 @@
             color:black;
             font-weight: 300;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            h6{
+                color:grey;
+            }
+            
         
     }
     div.card_para {
@@ -29,6 +33,20 @@
         font-size: 1.2rem;
         text-align: center;
         color:white;
+        a{
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color:black;
+            color:gray;
+            border-radius: 2px;
+            font-weight: 600;
+            &:hover{
+                color:white;
+                background-color:black;
+                transform: scale(1.5);
+            }
+        }
     }
 
     &__side{

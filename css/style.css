@@ -94,7 +94,8 @@
     font-family: monospace; }
 
 .section-deals {
-  padding: 25rem 0 50rem 0; }
+  padding: 25rem 0 50rem 0;
+  margin-top: -8rem; }
 
 .btn:link,
 .btn:visited {
@@ -228,11 +229,25 @@
     color: black;
     font-weight: 300;
     font-family: Georgia, 'Times New Roman', Times, serif; }
+    .card div.card-heading h6 {
+      color: grey; }
   .card div.card_para {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2rem;
     text-align: center;
     color: white; }
+    .card div.card_para a {
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: black;
+      color: gray;
+      border-radius: 2px;
+      font-weight: 600; }
+      .card div.card_para a:hover {
+        color: white;
+        background-color: black;
+        transform: scale(1.5); }
   .card__side {
     background-color: orangered;
     height: 25rem;
