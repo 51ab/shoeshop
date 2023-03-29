@@ -247,7 +247,7 @@
       .card div.card_para a:hover {
         color: white;
         background-color: black;
-        transform: scale(1.5); }
+        transform: scale(1.1); }
   .card__side {
     background-color: orangered;
     height: 25rem;
