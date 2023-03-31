@@ -94,8 +94,41 @@
     font-family: monospace; }
 
 .section-deals {
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 20rem 0;
   margin-top: -8rem; }
+
+.section_review {
+  text-align: center;
+  padding: 1%;
+  height: 100%;
+  margin-top: -10%;
+  background-image: url("https://wallpaperaccess.com/full/2641047.gif");
+  object-fit: cover; }
+  .section_review h2 {
+    color: #ff50bc;
+    animation-name: moveInLeft;
+    font-size: 3rem;
+    transition: all .6s; }
+    .section_review h2:hover {
+      transform: skewY(0deg) skewX(2deg) scale(1.2) translateY(-1rem);
+      text-shadow: 0.5rem 1rem 2rem #b5129a;
+      color: #ff00aa; }
+  .section_review .btn btn-white purple {
+    background-color: purple; }
+
+.section-login {
+  padding: 15rem 0;
+  position: relative;
+  background-image: linear-gradient(to right bottom, #ede8e6, #07e97f); }
+  .section-login .login {
+    width: 80%;
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../image/backg3.jpeg);
+    background-size: 100%;
+    border-radius: 3px;
+    height: 30rem; }
+    .section-login .login-form {
+      width: 50%;
+      height: 6rem; }
 
 .btn:link,
 .btn:visited {
@@ -107,7 +140,7 @@
   transition: all .5s;
   font-weight: 540;
   color: #0c0501;
-  background-color: azure; }
+  background-color: #aeefe0; }
 
 .btn:hover {
   transform: translateY(-15px);
@@ -120,7 +153,7 @@
   transform: translateY(-1px); }
 
 .btn-white {
-  background-color: #ffff;
+  background-color: #ffffff;
   color: rgba(54, 51, 51, 0.467); }
 
 .btn:after {
@@ -145,22 +178,27 @@
   opacity: 0; }
 
 .learnmore-button {
-  position: relative;
   margin-top: -15vh;
-  height: 6vh;
-  width: 35vh;
+  transition: all 1s;
+  height: 10vh;
+  width: 45vh;
   border-radius: 15px;
-  text-align: center; }
+  text-align: center;
+  margin-left: 20%; }
   .learnmore-button a {
     color: crimson;
-    font-size: 20px; }
+    font-size: 20px;
+    border-radius: 5px; }
   .learnmore-button:link, .learnmore-button:visited {
+    left: 10%;
     height: 8vh;
-    width: 35vh; }
+    width: 35vh;
+    transition: all 1s; }
   .learnmore-button:hover {
     height: 8vh;
     width: 35vh;
-    border-bottom: 3px; }
+    border-bottom: 3px;
+    transition: all 1s; }
     .learnmore-button:hover a {
       font-size: 25px;
       background-color: crimson;
@@ -172,11 +210,49 @@
       text-align: center;
       transform: translateY(25px);
       box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
-      border-bottom: 3px; }
+      border-bottom: 3px;
+      transition: all 0.8s; }
     .learnmore-button:hover:active {
       transform: translateY(25px);
       box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
-      border-bottom: 3px; }
+      border-bottom: 3px;
+      transition: all 1s; }
+
+.div_deal {
+  width: 100%;
+  height: 100%;
+  margin-top: -9%;
+  width: 18%;
+  height: 150%;
+  text-align: center;
+  border-radius: 35px;
+  left: 50%;
+  transform: translate(200%, 50%); }
+  .div_deal:hover a {
+    background-image: linear-gradient(to right bottom, #ede8e6, #07e97f); }
+
+.review_button_div {
+  margin-top: -7%; }
+  .review_button_div:hover:before a {
+    background-color: palevioletred; }
+  .review_button_div:hover a {
+    background-color: purple; }
+
+.form_button {
+  margin-bottom: 1%; }
+  .form_button a {
+    background-color: red;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 2% 7%;
+    color: beige;
+    border-radius: 4px;
+    transition: all .5s; }
+  .form_button:hover:visited a {
+    background-color: #670404;
+    color: #ffffff;
+    transform: scaleX(1.1); }
 
 .composition {
   position: relative;
@@ -216,6 +292,7 @@
     transform: scale(0.9); }
 
 .card {
+  margin-top: -20%;
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
@@ -301,6 +378,74 @@
   .feature-box .shoes_pic {
     height: 50%;
     width: 50%; }
+
+.review {
+  width: 75%;
+  background-color: black;
+  text-align: center;
+  border-radius: 2px;
+  transform: skewX(-12deg);
+  opacity: 0.8; }
+  .review > * {
+    transform: skewX(12deg);
+    opacity: 1; }
+  .review_shape {
+    width: 6rem;
+    height: 6rem;
+    float: left;
+    text-align: center;
+    transform: translateY(-50%, -50%);
+    padding: 1%;
+    background-image: url(/image/avatar3.png);
+    border-radius: 50%;
+    background-color: white;
+    position: relative; }
+    .review_shape img {
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      transition: all .5s; }
+  .review_name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #312e2e;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s; }
+  .review:hover .review_name {
+    opacity: 1; }
+  .review:hover img {
+    backface-visibility: hidden;
+    filter: blur(3px);
+    transform: scale(1.2); }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1.2rem 1.2rem;
+  border-radius: 2px;
+  border: transparent;
+  background-color: white; }
+
+.form__input:focus {
+  outline: none;
+  border-bottom: 4px solid #3acd09;
+  display: block; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden; }
+
+.form__input:focus:invalid {
+  border-bottom: 4px solid #cd0909; }
 
 .header {
   height: 95vh;

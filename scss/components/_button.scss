@@ -8,7 +8,7 @@
     transition: all .5s;
     font-weight:540 ;
     color:rgb(12, 5, 1);
-    background-color: azure;
+    background-color: rgb(174, 239, 224);
     
 }
 .btn:hover{
@@ -22,7 +22,7 @@
     transform: translateY(-1px);
 }
 .btn-white{
-    background-color: #ffff;
+    background-color: #ffffff;
     color:rgba(54, 51, 51, 0.467);
 
 }
@@ -50,25 +50,28 @@
 }
 
 .learnmore-button{
-    position: relative;
+   // position: absolute;
     margin-top: -15vh;
     //background-color: crimson;
-    
-    height:6vh;
-    width:35vh;
+    transition: all 1s;
+    height:10vh;
+    width:45vh;
     border-radius: 15px;
     text-align: center;
+    margin-left:20%;
     a{
         color:crimson;
         font-size: 20px;
+        border-radius: 5px;
         //text-decoration: none;
     }
 
     &:link,
     &:visited{
-       
+        left:10%;
         height:8vh;
         width:35vh;
+        transition: all 1s;
 
     }
     &:hover{
@@ -76,6 +79,7 @@
         height:8vh;
         width:35vh;
         border-bottom: 3px;
+        transition: all 1s;
    
 
         a{
@@ -92,13 +96,96 @@
     transform: translateY(25px);
     box-shadow: 0 2rem 2rem rgba(black, .2s);
     border-bottom: 3px;
+    transition: all 0.8s;
 
     }
     &:active{
         transform: translateY(25px);
         box-shadow: 0 2rem 2rem rgba(black, .2s);
         border-bottom: 3px;
-
+        transition: all 1s;
     }
 }
+}
+.div_deal{
+    //text-align: center;
+    //position: relative;
+  
+   width:100%;
+   height: 100%;
+
+   margin-top: -9%;
+
+
+   
+   //  background-image: linear-gradient(to right bottom,rgb(204, 198, 194),rgb(18, 211, 153));
+    width:18%;
+    height:150%;
+    text-align: center;
+    border-radius: 35px;
+
+   // top:50%;
+left:50%;
+transform: translate(200%,50%);
+   
+    
+    &:hover{
+       
+       a{
+
+         background-image: linear-gradient(to right bottom,rgb(237, 232, 230),rgb(7, 233, 127));
+       }
+        // box-shadow: 0 20px 40px rgb(3, 225, 169); 
+        // transform: scale(1.1) ;
+       
+    }
+    &:hover:after{
+       // transform: scaleX(1.1) scaleY(1.1);
+       // background-color: rgb(95, 94, 84);
+       // color:white;
+       
+    }
+
+}
+
+.review_button_div{
+    margin-top: -7%;
+    &:hover:before{
+        a{
+            background-color: palevioletred;
+        }
+    }
+    &:hover{
+        a{
+            background-color: purple;
+        }
+    }
+}
+.form_button{
+    margin-bottom: 1%;
+        
+
+
+    a{
+        background-color: red;
+        
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: 500;
+        padding: 2% 7%;
+        color:beige;
+        border-radius: 4px;
+        transition: all .5s;
+        
+
+    }
+    &:hover{
+        &:visited{
+        a{
+            background-color:rgb(103, 4, 4);
+            color: #ffffff;
+            transform: scaleX(1.1);
+        }
+    }}
+
 }

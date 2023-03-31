@@ -74,6 +74,56 @@ font-family: monospace;
     }
 }
 .section-deals{
-    padding:25rem 0 50rem 0;
+    padding:25rem 0 20rem 0;
     margin-top: -8rem;
 }
+.section_review{
+    text-align: center;
+    padding: 1% ;
+    height: 100%;
+    margin-top: -10%;
+    background-image: url("https://wallpaperaccess.com/full/2641047.gif");
+    //filter: blur(2px);
+   
+    object-fit: cover;
+   
+    h2{
+        color:rgb(255, 80, 188);
+        animation-name: moveInLeft;
+        font-size:3rem;
+        transition: all .6s;
+        &:hover{
+            transform: skewY(0deg) skewX(2deg) scale(1.2) translateY(-1rem);
+            text-shadow: .5rem 1rem 2rem rgba(rgb(181, 18, 154),2);
+            color:rgb(255, 0, 170);
+        }
+    }
+    .btn btn-white purple{
+        background-color: purple;
+    }
+}
+.section-login{
+    padding: 15rem 0;
+    position: relative;
+   
+    background-image: linear-gradient(to right bottom,rgb(237, 232, 230),rgb(7, 233, 127));
+    //text-align: center;
+
+.login{
+   width:80%;
+   
+    background-image:linear-gradient(105deg,
+    rgba($color-primary,.9) 0%,
+    rgba($color-primary,.9) 50%,
+    transparent 50%),
+    
+    url(../image/backg3.jpeg);
+background-size: 100%;
+border-radius: 3px;
+height: 30rem;
+
+&-form{
+    width:50%;
+    height: 6rem;
+}
+   }}
