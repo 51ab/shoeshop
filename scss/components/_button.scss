@@ -174,18 +174,19 @@ transform: translate(200%,50%);
         font-weight: 500;
         padding: 2% 7%;
         color:beige;
-        border-radius: 4px;
+        border-radius: 28px;
         transition: all .5s;
         
 
     }
     &:hover{
-        &:visited{
+        
         a{
             background-color:rgb(103, 4, 4);
             color: #ffffff;
             transform: scaleX(1.1);
+            box-shadow: 0 1rem 1rem rgb(20, 4, 4);
         }
-    }}
+    }
 
 }

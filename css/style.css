@@ -247,12 +247,13 @@
     font-weight: 500;
     padding: 2% 7%;
     color: beige;
-    border-radius: 4px;
+    border-radius: 28px;
     transition: all .5s; }
-  .form_button:hover:visited a {
+  .form_button:hover a {
     background-color: #670404;
     color: #ffffff;
-    transform: scaleX(1.1); }
+    transform: scaleX(1.1);
+    box-shadow: 0 1rem 1rem #140404; }
 
 .composition {
   position: relative;
@@ -501,6 +502,52 @@
 
 col-1-of-2.second {
   background-color: white; }
+
+.footer {
+  background-color: tomato;
+  padding: 2% 2%; }
+  .footer_logo_box .logo {
+    width: 25%;
+    height: 10%;
+    position: relative;
+    left: -5%;
+    margin-top: -1%;
+    float: left; }
+  .footer .footer_nav {
+    width: 75vh;
+    display: flex;
+    column-gap: 9rem; }
+    .footer .footer_nav li {
+      list-style: none; }
+      .footer .footer_nav li a {
+        width: 100%; }
+  .footer .footer_list {
+    display: inline; }
+    .footer .footer_list a {
+      color: black;
+      font-size: 1.1rem;
+      font-weight: 560;
+      list-style: none;
+      text-decoration: none; }
+    .footer .footer_list:visited a {
+      color: azure;
+      transform: rotateX(2deg) scale(1.2); }
+    .footer .footer_list .footer_item a {
+      font-size: 1.1rem;
+      font-weight: 200;
+      color: #3b2b2b; }
+    .footer .footer_list .footer_item:hover a {
+      color: azure; }
+
+.navigation_background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(cyan, #109797);
+  z-index: 1000; }
 
 * {
   margin: 0;
