@@ -539,6 +539,16 @@ col-1-of-2.second {
     .footer .footer_list .footer_item:hover a {
       color: azure; }
 
+.navigation_button {
+  background-color: aliceblue;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000; }
+
 .navigation_background {
   height: 6rem;
   width: 6rem;
@@ -546,8 +556,46 @@ col-1-of-2.second {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(cyan, #109797);
-  z-index: 1000; }
+  background-image: radial-gradient(#0d2e2e, #109797);
+  z-index: 1000;
+  transform: scale(80); }
+
+.navigation_nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0%;
+  z-index: 1500; }
+
+.navigation_list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center; }
+
+.navigation_item {
+  margin: 1rem; }
+
+.navigation_link:link, .navigation_link:visited {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 1rem 2rem;
+  color: aliceblue;
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+  background-size: 220%;
+  transition: all .4s; }
+  .navigation_link:link span, .navigation_link:visited span {
+    margin-right: 1rem;
+    display: inline-block; }
+
+.navigation_link:hover, .navigation_link:active {
+  background-size: 100%; }
 
 * {
   margin: 0;
