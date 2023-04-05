@@ -19,3 +19,18 @@ html{
         font-size: 75%; //1rem = 12, 12/16
     }
 }
+body{
+    
+    @include respond(tab-land) { // width < 1200?
+        padding: 0%;
+    }
+
+    @include respond(tab-port) { // width < 900?
+        padding: 0%;
+    }
+    
+    @include respond(big-desktop) {
+        padding: 0%;
+    }
+
+}
