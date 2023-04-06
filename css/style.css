@@ -395,7 +395,7 @@ body {
         outline: 0.4rem solid crimson; }
     .composition-photo-p3 {
       top: 6rem;
-      left: 25%; }
+      left: 31%; }
       .composition-photo-p3:hover {
         transform: scale(1.03) translateY(-3rem);
         box-shadow: 0 2rem 4rem rgba(224, 13, 232, 0.4);
