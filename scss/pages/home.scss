@@ -181,7 +181,7 @@ font-family: monospace;
     margin-top: -10%;
     background-image: url("https://wallpaperaccess.com/full/2641047.gif");
     @include respond(phone) {
-        padding: 1%;
+       // padding: 1%;
     }
     //filter: blur(2px);
 div.review{

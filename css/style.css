@@ -216,12 +216,8 @@ body {
   background-image: url("https://wallpaperaccess.com/full/2641047.gif");
   object-fit: cover; }
   @media only screen and (max-width: 37.5em) {
-    .section_review {
-      padding: 1%; } }
-  @media only screen and (max-width: 37.5em) {
     .section_review div.review {
-      width: 97%;
-      padding: 1%; } }
+      width: 97%; } }
   .section_review h2 {
     color: #ff50bc;
     animation-name: moveInLeft;
