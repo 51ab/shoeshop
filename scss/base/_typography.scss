@@ -12,6 +12,9 @@
         animation-name: moveInLeft;
         animation-duration: 3s;
         animation-timing-function: ease-out;
+        @include respond(phone) { // width < 1200?
+            letter-spacing: 1rem; //1 rem = 9px, 9/16 = 50%
+        }
       
     }
     .heading-primary--sub{
@@ -22,4 +25,7 @@
         animation-name: moveInRight;
         animation-duration: 3s;
         animation-timing-function: ease-out;
+        @include respond(phone) { // width < 1200?
+            letter-spacing: 0.5rem; //1 rem = 9px, 9/16 = 50%
+        }
     }

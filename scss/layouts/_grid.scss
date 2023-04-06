@@ -16,6 +16,10 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
         }
+        @include respond(phone) { 
+            width:100% !important;
+        }
+       
     }
 
     .col-1-of-2 {
@@ -43,7 +47,13 @@
         width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
     }
 
-}
-col-1-of-2.second{
+
+div.col-1-of-2.second{
     background-color:white;
-}
+    margin-top: -7%;
+    @include respond(phone) { // width < 1200?
+        margin-top: 0 !important;
+       margin-bottom: 5%!important;
+     }
+    
+}}
