@@ -34,21 +34,32 @@
   html {
     font-size: 75%; } }
 
-@media only screen and (max-width: 37.5em) {
-  body {
-    padding: 0%; } }
+* {
+  margin: 0;
+  padding: 0.5%;
+  box-sizing: border-box; }
 
-@media only screen and (max-width: 75em) {
-  body {
-    padding: 0%; } }
+html, body {
+  overflow-x: hidden; }
 
-@media only screen and (max-width: 56.25em) {
-  body {
-    padding: 0%; } }
-
-@media only screen and (min-width: 112.5em) {
-  body {
-    padding: 0%; } }
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: gray; }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      padding: 0%; } }
+  @media only screen and (max-width: 75em) {
+    body {
+      padding: 0%; } }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0%; } }
+  @media only screen and (min-width: 112.5em) {
+    body {
+      padding: 0%; } }
 
 .heading-primary {
   color: #ffff;
@@ -704,6 +715,9 @@
   border-radius: 50%;
   z-index: 2000;
   text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation_button {
+      right: 2rem; } }
 
 .navigation_background {
   height: 3rem;
@@ -716,6 +730,9 @@
   z-index: 1000;
   box-shadow: 0 1rem 3rem white;
   transition: all .8s; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation_background {
+      right: 2.5rem; } }
 
 .navigation_nav {
   height: 100vh;
@@ -802,15 +819,3 @@
 .navigation_checkbox:checked + .navigation_button .navigation_icon:after {
   transform: rotate(-45deg);
   top: 0rem; }
-
-* {
-  margin: 0;
-  padding: 0.5%;
-  box-sizing: border-box; }
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: gray; }

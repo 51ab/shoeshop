@@ -17,6 +17,9 @@
         border-radius: 50%;
         z-index: 2000;
         text-align: center;
+        @include respond(phone) { 
+            right: 2rem;
+        }
     }
     &_background{
         height: 3rem;
@@ -30,6 +33,9 @@
         //transform: scale(80);
         box-shadow: 0 1rem 3rem white;
             transition: all .8s;
+            @include respond(phone) { 
+                right: 2.5rem;
+            }
     }
     &_nav{
         height: 100vh;
