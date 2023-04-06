@@ -97,7 +97,7 @@ body {
 
 .section-about {
   background-color: white;
-  height: 45vh;
+  height: 62vh;
   padding: 2rem 0;
   margin-bottom: 2%; }
   .section-about .col-1-of-2 second {
@@ -378,15 +378,15 @@ body {
     transition: all 0.4s;
     outline-offset: 5px; }
     .composition-photo-p1 {
-      top: 0rem;
-      left: 5rem; }
+      top: -2rem;
+      left: 2rem; }
       .composition-photo-p1:hover {
         transform: scale(1.1);
         box-shadow: 0 2rem 4rem rgba(33, 211, 26, 0.4);
         z-index: 20;
         outline: 0.6rem solid #17dc14; }
     .composition-photo-p2 {
-      right: 4rem;
+      right: 6rem;
       top: 0rem; }
       .composition-photo-p2:hover {
         transform: scale(1.1);
@@ -395,7 +395,7 @@ body {
         outline: 0.4rem solid crimson; }
     .composition-photo-p3 {
       top: 6rem;
-      left: 20%; }
+      left: 25%; }
       .composition-photo-p3:hover {
         transform: scale(1.03) translateY(-3rem);
         box-shadow: 0 2rem 4rem rgba(224, 13, 232, 0.4);
