@@ -97,7 +97,7 @@ body {
 
 .section-about {
   background-color: white;
-  height: 65vh;
+  height: 45vh;
   padding: 2rem 0;
   margin-bottom: 2%; }
   .section-about .col-1-of-2 second {
@@ -143,6 +143,10 @@ body {
       height: 100%;
       margin-top: 50%; } }
   @media only screen and (max-width: 37.5em) {
+    .section-features .row .col-1-of-3 {
+      left: 50% !important;
+      right: 50% !important;
+      transform: translateY(-50%, -50%) !important; }
     .section-features .row .feature-box {
       left: 50% !important;
       right: 50% !important;
@@ -186,12 +190,20 @@ body {
       height: 100% !important;
       margin-top: 0rem !important; }
       .section-deals h2 {
-        margin-top: -30% !important; }
+        margin-top: -40% !important; }
       .section-deals .row {
         max-width: 100% !important;
-        max-height: 100% !important; }
+        max-height: 100% !important;
+        margin-top: -20% !important; }
         .section-deals .row .col-1-of-3 .card {
-          margin-bottom: 5rem !important; } }
+          margin-bottom: 5rem !important;
+          margin-left: 10%; }
+      .section-deals .card {
+        margin-top: 0 !important;
+        height: 36rem !important; }
+        .section-deals .card img {
+          margin-left: 25%;
+          width: 50%; } }
 
 .section_review {
   text-align: center;
@@ -200,6 +212,9 @@ body {
   margin-top: -10%;
   background-image: url("https://wallpaperaccess.com/full/2641047.gif");
   object-fit: cover; }
+  @media only screen and (max-width: 37.5em) {
+    .section_review div.review {
+      text-align: center; } }
   .section_review h2 {
     color: #ff50bc;
     animation-name: moveInLeft;
@@ -400,9 +415,11 @@ body {
     text-align: center;
     color: black;
     font-weight: 300;
-    font-family: Georgia, 'Times New Roman', Times, serif; }
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0%; }
     .card div.card-heading h6 {
-      color: grey; }
+      color: grey;
+      padding: 0%; }
   .card div.card_para {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2rem;

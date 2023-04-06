@@ -1,6 +1,6 @@
 .section-about{
     background-color: white;
-   height: 65vh;
+   height: 45vh;
   // margin-top: -20vh;
    padding:2rem 0;
    margin-bottom: 2%;
@@ -81,9 +81,15 @@
         height: 100%;
         margin-top: 50%;
         
+        
     }
     .row{
         @include respond(phone){
+            .col-1-of-3{
+                left: 50% !important;
+                right: 50% !important; 
+                transform: translateY(-50%,-50%) !important; 
+            }
 
         .feature-box{
             left: 50% !important;
@@ -139,14 +145,25 @@ font-family: monospace;
         height: 100% !important;
         margin-top: 0rem !important;
         h2{
-            margin-top: -30% !important;
+            margin-top: -40% !important;
         }
         .row{
             max-width: 100% !important;
             max-height: 100% !important;
+            margin-top: -20% !important;
             .col-1-of-3 .card{
                 
                 margin-bottom: 5rem !important;
+                margin-left: 10%;
+            }
+        }
+        .card{
+            margin-top: 0 !important;
+            height:36rem !important;
+            img{
+                margin-left:25%;
+                width:50%;
+                
             }
         }
         
@@ -160,6 +177,12 @@ font-family: monospace;
     margin-top: -10%;
     background-image: url("https://wallpaperaccess.com/full/2641047.gif");
     //filter: blur(2px);
+div.review{
+    @include respond(phone) {
+        text-align: center;
+
+
+    }}
    
     object-fit: cover;
    
