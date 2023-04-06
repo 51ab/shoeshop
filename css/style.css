@@ -196,14 +196,17 @@ body {
         max-height: 100% !important;
         margin-top: -20% !important; }
         .section-deals .row .col-1-of-3 .card {
-          margin-bottom: 5rem !important;
+          margin-bottom: -8rem !important;
           margin-left: 10%; }
       .section-deals .card {
         margin-top: 0 !important;
         height: 36rem !important; }
         .section-deals .card img {
           margin-left: 25%;
-          width: 50%; } }
+          width: 50%; }
+      .section-deals div.div_deal {
+        width: 13% !important;
+        margin-top: -18%; } }
 
 .section_review {
   text-align: center;
@@ -213,8 +216,12 @@ body {
   background-image: url("https://wallpaperaccess.com/full/2641047.gif");
   object-fit: cover; }
   @media only screen and (max-width: 37.5em) {
+    .section_review {
+      padding: 1%; } }
+  @media only screen and (max-width: 37.5em) {
     .section_review div.review {
-      text-align: center; } }
+      width: 97%;
+      padding: 1%; } }
   .section_review h2 {
     color: #ff50bc;
     animation-name: moveInLeft;

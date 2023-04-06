@@ -153,7 +153,7 @@ font-family: monospace;
             margin-top: -20% !important;
             .col-1-of-3 .card{
                 
-                margin-bottom: 5rem !important;
+                margin-bottom: -8rem !important;
                 margin-left: 10%;
             }
         }
@@ -166,6 +166,10 @@ font-family: monospace;
                 
             }
         }
+        div.div_deal{
+            width:13% !important;
+            margin-top: -18%;
+        }
         
         
     }
@@ -176,10 +180,14 @@ font-family: monospace;
     height: 100%;
     margin-top: -10%;
     background-image: url("https://wallpaperaccess.com/full/2641047.gif");
+    @include respond(phone) {
+        padding: 1%;
+    }
     //filter: blur(2px);
 div.review{
     @include respond(phone) {
-        text-align: center;
+        width: 97%;
+       // padding: 1%;
 
 
     }}
