@@ -136,11 +136,11 @@
     }
     &_checkbox:checked + &_button &_icon:before{
         transform: rotate(45deg);
-        top:0rem;
+        top:0.2rem;
     }
     &_checkbox:checked + &_button &_icon:after{
         transform: rotate(-45deg);
-        top:0rem;
+        top:0.2rem;
     }
 
 }

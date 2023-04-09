@@ -1,6 +1,6 @@
 .section-about{
     background-color: white;
-   height: 62vh;
+   height: 100%;
   // margin-top: -20vh;
    padding:2rem 0;
    margin-bottom: 2%;
@@ -11,7 +11,12 @@
     height: 100% !important;
 }
   
-  
+  h3{
+    font-size: 2.5rem;
+  }
+  .row{
+    width: 90%;
+  }
 }
 .about-box{
    // position: relative;
@@ -24,10 +29,10 @@
    // position: absolute;
     text-transform: uppercase;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 800;
     color:crimson;
-    
-    margin-top: -2%;
+    margin-bottom: 4%;
+    //margin-top: -2%;
     //height:25vh;
     //width:100vh;
 
@@ -35,7 +40,7 @@
     //left:50%;
     //right:50%;
     //transform: translate(-50%,-50%);
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-family: 'Times New Roman', Times, serif;
     transition: all .2s;
     animation-timing-function: ease-in-out;
@@ -70,7 +75,7 @@
 }
 .section-features{
     padding:20rem 2rem;
-    height: 95vh;
+    height: 72vh;
     background-image: linear-gradient(to right bottom,rgba(78, 95, 75, 0.7),rgba(58, 70, 62, 0.701)),url(https://theburgnews.com/wp-content/uploads/2021/04/IMG_8160-scaled.jpeg);
     background-size: cover;
     background-position: top;
@@ -84,6 +89,7 @@
         
     }
     .row{
+        max-width: 100%;
         @include respond(phone){
             .col-1-of-3{
                 left: 50% !important;
@@ -127,20 +133,31 @@
     h2{
 color:white;
 font-weight: 500;
-font-size: 2rem;
+font-size: 2.6rem;
 margin-top:-8rem;
 margin-bottom: 5rem;
+text-align: center;
 text-transform: uppercase;
 font-family: monospace;
     }
 }
 .section-deals{
-    padding:25rem 0 20rem 0;
-    margin-top: -8rem;
+    padding:10rem 0 20rem 0;
+    .card__side .card__side--back .card__side--back{
+        img{
+            width:30%;
+
+        } h3{
+            margin-top: -4%;
+        }
+
+    }
+   // margin-top: -8rem;
     h2{
-        margin-top: -17% !important;
+       // margin-top: -17% !important;
     }
     @include respond(phone) {
+        padding: 25rem 0 20rem 0rem;
         
         height: 100% !important;
         margin-top: 0rem !important;
@@ -176,9 +193,9 @@ font-family: monospace;
 }
 .section_review{
     text-align: center;
-    padding: 1% ;
+    padding: 5% ;
     height: 100%;
-    margin-top: -10%;
+   // margin-top: -10%;
     background-image: url("https://wallpaperaccess.com/full/2641047.gif");
     @include respond(phone) {
        // padding: 1%;

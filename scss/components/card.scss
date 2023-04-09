@@ -25,9 +25,12 @@
             font-weight: 300;
             font-family: Georgia, 'Times New Roman', Times, serif;
             padding: 0%;
+            margin-top: -2%;
+            
             h6{
                 color:grey;
                 padding: 0%;
+                margin-top: -2%;
             }
             
         
@@ -73,6 +76,7 @@
     &--back{
         background-color: #ffb900;
         transform: rotateY(180deg);
+
 
     }
     &--back-1{

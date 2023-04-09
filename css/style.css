@@ -97,7 +97,7 @@ body {
 
 .section-about {
   background-color: white;
-  height: 62vh;
+  height: 100%;
   padding: 2rem 0;
   margin-bottom: 2%; }
   .section-about .col-1-of-2 second {
@@ -105,14 +105,18 @@ body {
   @media only screen and (max-width: 37.5em) {
     .section-about {
       height: 100% !important; } }
+  .section-about h3 {
+    font-size: 2.5rem; }
+  .section-about .row {
+    width: 90%; }
 
 .heading-secondary {
   text-transform: uppercase;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 800;
   color: crimson;
-  margin-top: -2%;
-  font-size: 2.5rem;
+  margin-bottom: 4%;
+  font-size: 3.5rem;
   font-family: 'Times New Roman', Times, serif;
   transition: all .2s;
   animation-timing-function: ease-in-out; }
@@ -131,7 +135,7 @@ body {
 
 .section-features {
   padding: 20rem 2rem;
-  height: 95vh;
+  height: 72vh;
   background-image: linear-gradient(to right bottom, rgba(78, 95, 75, 0.7), rgba(58, 70, 62, 0.701)), url(https://theburgnews.com/wp-content/uploads/2021/04/IMG_8160-scaled.jpeg);
   background-size: cover;
   background-position: top;
@@ -142,51 +146,56 @@ body {
       clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%) !important;
       height: 100%;
       margin-top: 50%; } }
-  @media only screen and (max-width: 37.5em) {
-    .section-features .row .col-1-of-3 {
-      left: 50% !important;
-      right: 50% !important;
-      transform: translateY(-50%, -50%) !important; }
-    .section-features .row .feature-box {
-      left: 50% !important;
-      right: 50% !important;
-      transform: translateY(-50%, -50%) !important; } }
-  .section-features .row::after {
-    content: "";
-    display: table;
-    clear: both; }
-  .section-features .row [class^="col-"] {
-    float: left; }
-    .section-features .row [class^="col-"]:not(:last-child) {
-      margin-right: 4rem; }
-    @media only screen and (max-width: 56.25em) {
-      .section-features .row [class^="col-"] {
-        width: 40% !important; } }
+  .section-features .row {
+    max-width: 100%; }
     @media only screen and (max-width: 37.5em) {
-      .section-features .row [class^="col-"] {
-        height: 10% !important;
-        width: 100% !important;
-        margin-right: 0% !important;
-        margin-bottom: 0% !important;
-        margin-left: 0% !important;
-        max-width: 100% !important;
-        max-height: 25% !important; } }
+      .section-features .row .col-1-of-3 {
+        left: 50% !important;
+        right: 50% !important;
+        transform: translateY(-50%, -50%) !important; }
+      .section-features .row .feature-box {
+        left: 50% !important;
+        right: 50% !important;
+        transform: translateY(-50%, -50%) !important; } }
+    .section-features .row::after {
+      content: "";
+      display: table;
+      clear: both; }
+    .section-features .row [class^="col-"] {
+      float: left; }
+      .section-features .row [class^="col-"]:not(:last-child) {
+        margin-right: 4rem; }
+      @media only screen and (max-width: 56.25em) {
+        .section-features .row [class^="col-"] {
+          width: 40% !important; } }
+      @media only screen and (max-width: 37.5em) {
+        .section-features .row [class^="col-"] {
+          height: 10% !important;
+          width: 100% !important;
+          margin-right: 0% !important;
+          margin-bottom: 0% !important;
+          margin-left: 0% !important;
+          max-width: 100% !important;
+          max-height: 25% !important; } }
   .section-features h2 {
     color: white;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 2.6rem;
     margin-top: -8rem;
     margin-bottom: 5rem;
+    text-align: center;
     text-transform: uppercase;
     font-family: monospace; }
 
 .section-deals {
-  padding: 25rem 0 20rem 0;
-  margin-top: -8rem; }
-  .section-deals h2 {
-    margin-top: -17% !important; }
+  padding: 10rem 0 20rem 0; }
+  .section-deals .card__side .card__side--back .card__side--back img {
+    width: 30%; }
+  .section-deals .card__side .card__side--back .card__side--back h3 {
+    margin-top: -4%; }
   @media only screen and (max-width: 37.5em) {
     .section-deals {
+      padding: 25rem 0 20rem 0rem;
       height: 100% !important;
       margin-top: 0rem !important; }
       .section-deals h2 {
@@ -209,9 +218,8 @@ body {
 
 .section_review {
   text-align: center;
-  padding: 1%;
+  padding: 5%;
   height: 100%;
-  margin-top: -10%;
   background-image: url("https://wallpaperaccess.com/full/2641047.gif");
   object-fit: cover; }
   @media only screen and (max-width: 37.5em) {
@@ -343,12 +351,11 @@ body {
   .div_deal:hover a {
     background-image: linear-gradient(to right bottom, #ede8e6, #07e97f); }
 
-.review_button_div {
-  margin-top: -7%; }
-  .review_button_div:hover:before a {
-    background-color: palevioletred; }
-  .review_button_div:hover a {
-    background-color: purple; }
+.review_button_div:hover:before a {
+  background-color: palevioletred; }
+
+.review_button_div:hover a {
+  background-color: purple; }
 
 .form_button {
   margin-bottom: 1%; }
@@ -418,10 +425,12 @@ body {
     color: black;
     font-weight: 300;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 0%; }
+    padding: 0%;
+    margin-top: -2%; }
     .card div.card-heading h6 {
       color: grey;
-      padding: 0%; }
+      padding: 0%;
+      margin-top: -2%; }
   .card div.card_para {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2rem;
@@ -495,11 +504,15 @@ body {
 
 .review {
   width: 75%;
-  background-color: black;
+  background-color: rgba(238, 221, 221, 0.733);
   text-align: center;
   border-radius: 2px;
   transform: skewX(-12deg);
   opacity: 0.8; }
+  @media only screen and (min-width: 112.5em) {
+    .review {
+      margin-left: 11%;
+      height: 8rem; } }
   .review > * {
     transform: skewX(12deg);
     opacity: 1; }
@@ -508,7 +521,7 @@ body {
     height: 6rem;
     float: left;
     text-align: center;
-    transform: translateY(-50%, -50%);
+    transform: translateX(-50%, -50%) translateY(-50%, -50%);
     padding: 1%;
     background-image: url(/image/avatar3.png);
     border-radius: 50%;
@@ -575,7 +588,7 @@ body {
     visibility: visible; }
   .popup .popup__close {
     color: black;
-    top: -2%;
+    top: 0%;
     right: 0.5%;
     display: inline-block;
     position: absolute;
@@ -837,7 +850,7 @@ body {
     text-align: center; }
   .navigation_checkbox:checked + .navigation_button .navigation_icon:before {
     transform: rotate(45deg);
-    top: 0rem; }
+    top: 0.2rem; }
   .navigation_checkbox:checked + .navigation_button .navigation_icon:after {
     transform: rotate(-45deg);
-    top: 0rem; }
+    top: 0.2rem; }
