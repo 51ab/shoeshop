@@ -55,9 +55,8 @@ color:gray;
 @include respond(big-desktop) {
     padding: 0%;
 }
-
-
-
-
-
+}
+::selection{
+    color:white;
+    background-color:crimson;
 }
