@@ -4,17 +4,39 @@
     text-align: center;
     border-radius: 2px;
     transform: skewX(-12deg);
+    p{
+        font-size: 1.5rem;
+    }
 
 
 
     @include respond(big-desktop) {
         margin-left:  11%; 
-        height: 8rem;
+        height: 15rem;
+        h3{
+            font-size: 2.3rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+    }
+    @include respond(phone) {
+        width:95%;
+        //margin-left:  11%; 
+        height: 15rem;
+        padding: 1%;
+        transform: skewX(0deg);
+        h3{
+            font-size: 1.5rem;
+        }
     }
     
     
     opacity: 0.8;
     & > *{
+        @include respond(phone) {
+            transform: skewX(0deg);
+        }
         transform: skewX(12deg);
         opacity: 1;
     }

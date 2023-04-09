@@ -22,7 +22,10 @@
    // position: relative;
    
 //left:30px;
-//text-align: center;
+text-align: center;
+h2{
+   // margin-left: 50%;
+}
 
 }
     .heading-secondary{
@@ -75,7 +78,7 @@
 }
 .section-features{
     padding:20rem 2rem;
-    height: 72vh;
+    height: 100%;
     background-image: linear-gradient(to right bottom,rgba(78, 95, 75, 0.7),rgba(58, 70, 62, 0.701)),url(https://theburgnews.com/wp-content/uploads/2021/04/IMG_8160-scaled.jpeg);
     background-size: cover;
     background-position: top;
