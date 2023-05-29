@@ -250,7 +250,7 @@ body {
   background-image: linear-gradient(to right bottom, #ede8e6, #07e97f); }
   .section-login .login {
     width: 80%;
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(https://github.com/51ab/shoeshop/blob/main/image/bg1.png?raw=true);
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../image/backg3.jpeg);
     background-size: 100%;
     border-radius: 3px;
     height: 30rem;
@@ -676,7 +676,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(78, 95, 75, 0.7), rgba(58, 70, 62, 0.701)), url("../../image/bg1.png");
+  background-image: linear-gradient(to right bottom, rgba(78, 95, 75, 0.7), rgba(58, 70, 62, 0.701)), url(https://github.com/51ab/shoeshop/blob/main/image/bg1.png?raw=true);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0% 0%, 100% 0, 100% 90%, 0% 100%);
