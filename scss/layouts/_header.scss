@@ -1,7 +1,11 @@
 .header
 {
     height: 95vh;
+<<<<<<< HEAD
     background-image: linear-gradient(to right bottom,rgba(78, 95, 75, 0.7),rgba(58, 70, 62, 0.701)),url("https://github.com/51ab/shoeshop/blob/main/image/bg1.png?raw=true");
+=======
+    background-image: linear-gradient(to right bottom,rgba(78, 95, 75, 0.7),rgba(58, 70, 62, 0.701)),url(https://github.com/51ab/shoeshop/blob/main/image/bg1.png?raw=true);
+>>>>>>> ab02f5a16fc491b0d7cb0699ade6980dc24e9219
     background-size: cover;
     background-position: top;
     clip-path: polygon(0% 0%, 100% 0, 100% 90% , 0% 100%);

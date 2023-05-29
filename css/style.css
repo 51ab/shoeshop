@@ -250,7 +250,7 @@ body {
   background-image: linear-gradient(to right bottom, #ede8e6, #07e97f); }
   .section-login .login {
     width: 80%;
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../image/backg3.jpeg);
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(https://github.com/51ab/shoeshop/blob/main/image/bg1.png?raw=true);
     background-size: 100%;
     border-radius: 3px;
     height: 30rem;
